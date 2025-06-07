@@ -1,6 +1,5 @@
 # Starter nest js DDD CQRS
 
-> Système de gestion de salles de sport avec abonnements, accès NFC et dashboard pour gérants.  
 > Clean Architecture + NestJS + CQRS + DDD + PostgreSQL + NFC Ready
 
 ---
@@ -11,8 +10,8 @@
 - **CQRS** (Command Query Responsibility Segregation)
 - **DDD** (Domain-Driven Design)
 - **PostgreSQL** (via TypeORM)
-- **NFC Ready** (lecteurs badge, ID carte, validation accès)
-- **JWT Auth** (admin, membres, si besoin futur)
+- **NFC Ready** ()
+- **JWT Auth** ()
 - **Clean Architecture** (Domain / App / Infra / Presentation)
 
 ---
@@ -24,7 +23,7 @@ src/
 ├── @vendor/              # Composants techniques réutilisables
 │   ├── base/             # Handlers & services de base
 │   └── core/             # CQRS module, filtres, interceptors...
-├── modules/              # Modules métier (user, subscription, access...)
+├── modules/              # Modules métier (user ...)
 │   └── user/             # Exemple de module métier complet
 │       ├── domain/       # Entités, interfaces, logique métier pure
 │       ├── application/  # Use cases (CQRS)
@@ -40,8 +39,8 @@ src/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/ton-projet/fitbadge-backend.git
-cd fitbadge-backend
+git clone https://github.com/ton-projet/nest-js-starter-ddd-cqrs-typeorm.git
+cd nest-js-starter-ddd-cqrs-typeorm
 npm install
 cp .env.example .env
 ```
@@ -63,8 +62,6 @@ DB_NAME=fitbadge
 # JWT
 JWT_SECRET=secretkey
 
-# NFC
-NFC_PORT=COM3
 ```
 
 ---
@@ -100,8 +97,6 @@ npm run test              # Tests unitaires
   "data": {
     "id": "uuid",
     "name": "John Doe",
-    "badgeId": "123456",
-    "subscriptionEndDate": "2025-12-31"
   }
 }
 ```

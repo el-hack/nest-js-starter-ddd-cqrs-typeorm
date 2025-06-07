@@ -1,4 +1,4 @@
-# 🏋️‍♂️ FitBadge – Backend
+# Starter nest js DDD CQRS
 
 > Système de gestion de salles de sport avec abonnements, accès NFC et dashboard pour gérants.  
 > Clean Architecture + NestJS + CQRS + DDD + PostgreSQL + NFC Ready
@@ -105,20 +105,6 @@ npm run test              # Tests unitaires
   }
 }
 ```
-
----
-
-## 🧠 Modules prévus
-
-| Module            | Description |
-|------------------|-------------|
-| `user`           | Gestion des membres |
-| `subscription`   | Abonnements, échéances, paiements |
-| `access-control` | Lecture badge NFC, autorisation accès |
-| `admin-auth`     | Authentification gérants |
-| `stats`          | Fréquentation, revenus, alertes |
-| `nfc`            | Intégration matérielle lecteur badge |
-
 ---
 
 ## ✅ Convention des réponses API

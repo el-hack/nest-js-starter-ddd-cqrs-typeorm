@@ -10,7 +10,6 @@
 - **CQRS** (Command Query Responsibility Segregation)
 - **DDD** (Domain-Driven Design)
 - **PostgreSQL** (via TypeORM)
-- **NFC Ready** ()
 - **JWT Auth** ()
 - **Clean Architecture** (Domain / App / Infra / Presentation)
 
